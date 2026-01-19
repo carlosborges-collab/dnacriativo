@@ -24,15 +24,11 @@ export const BookTeaser: React.FC = () => {
              <div className="absolute -inset-4 bg-gradient-to-r from-purple-600/30 to-green-600/30 rounded-full blur-3xl opacity-50 group-hover:opacity-75 transition duration-1000"></div>
              
              <div className="relative z-10 flex flex-col items-center">
-                {/* Book Cover (DezOrdem) */}
+                {/* Book Cover / Main Asset */}
                 <div className="relative z-30 transform hover:-translate-y-4 transition duration-500 w-[240px] md:w-[280px]">
                    <img 
-                    src="./dezordem-cover.jpg" 
-                    onError={(e) => {
-                      e.currentTarget.src = 'https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=1000&auto=format&fit=crop';
-                      e.currentTarget.style.filter = 'hue-rotate(90deg) contrast(1.2)';
-                    }}
-                    alt="Livro DezOrdem" 
+                    src="https://i.imgur.com/HM1Scl4.jpeg" 
+                    alt="Livro DezOrdem e Laudo" 
                     className="w-full rounded-lg shadow-[0_20px_50px_rgba(0,255,100,0.2)] border border-green-500/30"
                    />
                 </div>
@@ -40,17 +36,15 @@ export const BookTeaser: React.FC = () => {
                 {/* Platform Screenshots (Behind) */}
                 <div className="absolute top-10 -right-4 md:-right-12 z-20 w-[200px] md:w-[260px] transform rotate-6 hover:rotate-12 transition duration-500">
                    <img 
-                    src="./mentor-ia.jpg"
-                    onError={(e) => {e.currentTarget.src = 'https://cdn.dribbble.com/users/26642/screenshots/15949673/media/53926569766c6428d09762df7a792c39.png?resize=400x300&vertical=center'}}
-                    alt="Mentor IA Interface" 
+                    src="https://i.imgur.com/H4DoTr5.jpeg"
+                    alt="Interface do Método" 
                     className="w-full rounded-lg shadow-2xl border border-purple-500/40 bg-gray-900" 
                    />
                 </div>
                 <div className="absolute top-20 -left-4 md:-left-12 z-10 w-[200px] md:w-[260px] transform -rotate-6 hover:-rotate-12 transition duration-500">
                    <img 
-                    src="./laudo-tecnico.jpg" 
-                    onError={(e) => {e.currentTarget.src = 'https://cdn.dribbble.com/users/1615584/screenshots/15710288/media/78725170d47348937989345700877990.jpg?resize=400x300&vertical=center'}}
-                    alt="Laudo Técnico" 
+                    src="https://i.imgur.com/4GKkPaN.jpeg" 
+                    alt="Neuro-Dossiê" 
                     className="w-full rounded-lg shadow-2xl border border-blue-500/40 bg-gray-900" 
                    />
                 </div>
@@ -65,10 +59,10 @@ export const BookTeaser: React.FC = () => {
                 <div className="p-2 bg-green-900/30 rounded-lg text-green-400">
                   <BookOpen className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Livro: DezOrdem</h3>
+                <h3 className="text-2xl font-bold text-white">Livro Digital: DezOrdem</h3>
               </div>
               <p className="text-gray-400 pl-14">
-                O manual definitivo. As 10 leis ocultas que transformam sua aparente desordem na sua maior vantagem competitiva.
+                O manual definitivo para organizar sua mente sem castrar sua criatividade.
               </p>
             </div>
 
@@ -77,10 +71,10 @@ export const BookTeaser: React.FC = () => {
                 <div className="p-2 bg-blue-900/30 rounded-lg text-blue-400">
                   <FileText className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Laudo Neuro-Psicométrico</h3>
+                <h3 className="text-2xl font-bold text-white">Dossiê Neuro-Psicométrico</h3>
               </div>
               <p className="text-gray-400 pl-14">
-                Não é um horóscopo. É um dossiê técnico de 20 páginas mapeando seus neurotransmissores, ondas cerebrais e zonas de genialidade.
+                Mapeamento técnico de 20 páginas detalhando suas zonas de genialidade.
               </p>
             </div>
 
@@ -89,10 +83,10 @@ export const BookTeaser: React.FC = () => {
                 <div className="p-2 bg-purple-900/30 rounded-lg text-purple-400">
                   <MessageSquare className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Mentor IA (Oráculo)</h3>
+                <h3 className="text-2xl font-bold text-white">Oráculo Criativo (IA)</h3>
               </div>
               <p className="text-gray-400 pl-14">
-                Uma IA treinada exclusivamente na mente do Carlos Borges. Tire dúvidas sobre carreira, projetos e bloqueios 24h por dia.
+                Consultoria 24h por dia treinada nos princípios do Carlos Borges.
               </p>
             </div>
 
