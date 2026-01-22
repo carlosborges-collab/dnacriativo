@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Hero } from '../components/Hero';
 import { Identification } from '../components/Identification';
@@ -8,7 +9,8 @@ import { Testimonials } from '../components/Testimonials';
 import { Pricing } from '../components/Pricing';
 import { FAQ } from '../components/FAQ';
 import { Button } from '../components/Button';
-import { Lock, ShieldCheck, Brain } from 'lucide-react';
+import { Lock, ShieldCheck, Brain, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FinalCTA: React.FC = () => (
   <section className="py-24 bg-gradient-to-b from-magician-900 to-black text-center relative overflow-hidden">
@@ -26,10 +28,18 @@ const FinalCTA: React.FC = () => (
           onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} 
           variant="secondary" 
           pulse 
-          className="py-8 px-12 text-2xl font-black uppercase tracking-tighter"
+          className="py-8 px-12 text-2xl font-black uppercase tracking-tighter w-full md:w-auto"
         >
           → DESCOBRIR MEU PADRÃO CRIATIVO AGORA
         </Button>
+        
+        <div className="mt-12 pt-8 border-t border-white/5">
+          <p className="text-gray-500 text-sm mb-6">Já sabe seu padrão e quer o próximo passo?</p>
+          <Link to="/mentoria" className="inline-flex items-center gap-2 text-gold-500 font-bold hover:gap-4 transition-all">
+            Conhecer a Mentoria DEZ•ORDEM <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
         <div className="mt-8 flex flex-wrap justify-center gap-8 opacity-50">
            <div className="flex items-center gap-2 text-xs text-white uppercase tracking-widest font-black">
              <ShieldCheck className="w-4 h-4 text-green-500" /> Pagamento Seguro
@@ -54,8 +64,8 @@ const Footer: React.FC = () => (
          <div className="flex items-center gap-2 text-[10px] font-black"><ShieldCheck className="w-3 h-3" /> SSL SECURE</div>
          <div className="flex items-center gap-2 text-[10px] font-black"><Brain className="w-3 h-3" /> NEURO-AUTH</div>
       </div>
-      <p className="mb-4 text-[10px] tracking-widest uppercase">
-        &copy; {new Date().getFullYear()} Carlos Borges & Foster Company. Todos os direitos reservados.
+      <p className="mb-4 text-[10px] tracking-widest uppercase font-black">
+        &copy; {new Date().getFullYear()} Carlos Borges & Foster Company.
       </p>
       <p className="text-[9px] max-w-3xl mx-auto leading-relaxed opacity-50">
         Isenção de responsabilidade: Este site não faz parte do site do Facebook ou Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de forma alguma. FACEBOOK é uma marca comercial da FACEBOOK, Inc. Os resultados podem variar de pessoa para pessoa com base no perfil individual.
