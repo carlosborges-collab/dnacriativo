@@ -6,45 +6,45 @@ export const ScientificSecrets: React.FC = () => {
     <section className="py-24 bg-[#0a0a0a] border-t border-gray-900">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
-            Isso não é "Autoajuda". <br />
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-white mb-6">
+            Isso Não É Autoajuda. <br />
             <span className="text-blue-500">É Neurociência Pura.</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Nossos laudos baseiam-se em análises de neuroimagem, padrões de ondas cerebrais e níveis de neurotransmissores. Veja o que acontece dentro da sua cabeça:
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            Seu Padrão Criativo não é um "tipo de personalidade". É como seu cérebro está literalmente <strong>CONECTADO</strong>.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-colors group">
-            <Activity className="w-10 h-10 text-blue-400 mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-white font-bold text-lg mb-2">Ondas Gama & Beta</h3>
+          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-all group">
+            <Activity className="w-12 h-12 text-blue-400 mb-6 group-hover:scale-110 transition-transform" />
+            <h3 className="text-white font-black text-xs uppercase tracking-widest mb-2">Ondas Cerebrais</h3>
             <p className="text-sm text-gray-400">
-              Identificamos se sua mente opera em picos de alta frequência (Insight/Visionário) ou sustentação constante (Organizador).
+              Seu padrão define se você opera em picos de insight (<strong>Gama</strong>) ou foco sustentado (<strong>Beta</strong>).
             </p>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-colors group">
-            <Zap className="w-10 h-10 text-purple-400 mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-white font-bold text-lg mb-2">Coquetel Químico</h3>
+          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-all group">
+            <Zap className="w-12 h-12 text-purple-400 mb-6 group-hover:scale-110 transition-transform" />
+            <h3 className="text-white font-black text-xs uppercase tracking-widest mb-2">Neurotransmissores</h3>
             <p className="text-sm text-gray-400">
-              Dopamina (novidade), Serotonina (calma) ou Noradrenalina (ação). Seu perfil é definido pelo combustível que seu cérebro exige.
+              Dopamina te move por novidade. Serotonina por estabilidade. Descubra qual é seu combustível real.
             </p>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-green-500/50 transition-colors group">
-            <Network className="w-10 h-10 text-green-400 mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-white font-bold text-lg mb-2">Rede de Modo Padrão</h3>
+          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-green-500/50 transition-all group">
+            <Network className="w-12 h-12 text-green-400 mb-6 group-hover:scale-110 transition-transform" />
+            <h3 className="text-white font-black text-xs uppercase tracking-widest mb-2">Redes Neurais</h3>
             <p className="text-sm text-gray-400">
-              Analisamos a hiperconectividade entre áreas cerebrais. É assim que o "Versátil" conecta pontos que ninguém mais vê.
+              Visionários têm a <strong>DMN</strong> 340% mais ativa. Organizadores têm o <strong>CPFDL</strong> hiperativado.
             </p>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-gold-500/50 transition-colors group">
-            <Radio className="w-10 h-10 text-gold-400 mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-white font-bold text-lg mb-2">Inibição Latente</h3>
+          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-gold-500/50 transition-all group">
+            <Radio className="w-12 h-12 text-gold-400 mb-6 group-hover:scale-110 transition-transform" />
+            <h3 className="text-white font-black text-xs uppercase tracking-widest mb-2">Forças & Riscos</h3>
             <p className="text-sm text-gray-400">
-              Baixa inibição permite ao "Questionador" processar informações que outros filtram, detectando falhas no sistema.
+              Cada padrão tem superpoderes específicos — e armadilhas que te travam se não souber evitar.
             </p>
           </div>
         </div>
